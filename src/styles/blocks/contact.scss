@@ -45,6 +45,12 @@
     @include font(16px, normal, 27px);
     text-decoration: none;
     color: $text-color;
+
+    transition: color 0.4s;
+
+    &:hover {
+      color: $main-color;
+    }
   }
 
   &__form {

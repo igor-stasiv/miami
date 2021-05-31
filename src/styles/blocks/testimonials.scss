@@ -26,6 +26,16 @@
     text-align: center;
   }
 
+  &__photo {
+    position: relative;
+
+    transition: transform 0.4s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
   &__name {
     margin-top: 28px;
 

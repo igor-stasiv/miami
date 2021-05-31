@@ -29,12 +29,20 @@
   }
 
   &__photo {
+    position: relative;
     object-fit: cover;
 
     height: 131px;
     width: 100%;
 
     border-radius: 8px;
+
+    transition: transform 0.4s;
+
+    &:hover {
+      z-index: 1;
+      transform: scale(1.05);
+    }
 
     @include desktop-screen {
       height: 256px;
